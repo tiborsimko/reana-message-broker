@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # This file is part of REANA.
 # Copyright (C) 2017 CERN.
 #
@@ -18,7 +20,6 @@
 # granted to it by virtue of its status as an Intergovernmental Organization or
 # submit itself to any jurisdiction.
 
-#!/bin/bash
 cat > /etc/rabbitmq/rabbitmq.config <<EOF
 [
 	{rabbit, [{default_user, <<"$1">>},{default_pass, <<"$2">>},{tcp_listeners, [{"0.0.0.0", 5672}]}]}
