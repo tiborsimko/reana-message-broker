@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+#
 # This file is part of REANA.
 # Copyright (C) 2017 CERN.
 #
@@ -16,68 +18,10 @@
 # In applying this license, CERN does not waive the privileges and immunities
 # granted to it by virtue of its status as an Intergovernmental Organization or
 # submit itself to any jurisdiction.
+"""REANA-Message-Broker."""
 
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
+from __future__ import absolute_import, print_function
 
-# C extensions
-*.so
+from .version import __version__
 
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*,cover
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Vagrant
-.vagrant
-
-# IntelliJ project files
-.idea
-*.iml
+__all__ = ('__version__', )

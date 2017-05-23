@@ -11,24 +11,37 @@
 # A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with REANA; if not, see <http://www.gnu.org/licenses>.
+# along with Invenio; if not, see <http://www.gnu.org/licenses>.
 #
 # In applying this license, CERN does not waive the privileges and immunities
 # granted to it by virtue of its status as an Intergovernmental Organization or
 # submit itself to any jurisdiction.
 
-FROM ubuntu:16.04
-RUN apt-get update
-RUN apt-get -y upgrade
-RUN apt-get -y install rabbitmq-server
-RUN apt-get -y autoremove && apt-get -y clean
-RUN service rabbitmq-server start
-ADD start.sh /start.sh
-RUN chmod 755 ./start.sh
-#RUN rabbitmqctl add_user test 1234
-#RUN rabbitmqctl add_vhost vhost
-#RUN rabbitmqctl set_user_tags test test-tag
-#RUN rabbitmqctl set_permissions -p myvhost myuser ".*" ".*" ".*"
-EXPOSE 5672
-EXPOSE 15672
-CMD ["/start.sh", "test", "1234"]
+notifications:
+  email: false
+
+sudo: true
+
+language: python
+
+cache:
+  - pip
+
+python:
+  - "3.5"
+
+services:
+  - docker
+
+before_install:
+  - travis_retry pip install --upgrade pip setuptools py
+  - travis_retry pip install twine wheel coveralls
+
+install:
+  - travis_retry pip install -e .[all]
+
+script:
+  - ./run-tests.sh
+
+after_success:
+- coveralls
