@@ -20,4 +20,26 @@ REANA Message Broker
 .. image:: https://img.shields.io/github/license/reanahub/reana-message-broker.svg
    :target: https://github.com/reanahub/reana-message-broker/blob/master/COPYING
 
-The message broker component of the REANA system.
+About
+-----
+
+REANA-Message-Broker is a component of the `REANA <http://reanahub.io/>`_
+reusable analysis platform. It provides a broker service for event messages and
+notifications.
+
+Features
+--------
+
+- message queue for events
+- uses RabbitMQ
+
+Useful links
+------------
+
+- `documentation <https://reana-message-broker.readthedocs.io/>`_
+- `releases <https://github.com/reanahub/reana-message-broker/releases>`_
+- `known issues <https://github.com/reanahub/reana-message-broker/issues>`_
+- `source code <https://github.com/reanahub/reana-message-broker>`_
+
+For more information about the REANA reusable analysis platform, please see the
+general `REANA documentation <http://reana.readthedocs.io/>`_.

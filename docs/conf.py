@@ -40,6 +40,9 @@ import sphinx.environment
 #
 # needs_sphinx = '1.0'
 
+# Do not warn on external images.
+suppress_warnings = ['image.nonlocal_uri']
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
@@ -116,7 +119,7 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
     'logo': 'logo-reana.png',
-    'description': 'REANA Message Broker',
+    'description': 'REANA-Message-Broker',
     'github_user': 'reanahub',
     'github_repo': 'reana-message-broker',
     'github_button': False,

@@ -1,10 +1,17 @@
 .. include:: ../README.rst
+   :end-before: About
+
+.. include:: ../README.rst
+   :start-after: -----
+   :end-before: Features
 
 .. toctree::
    :numbered:
-   :maxdepth: 2
 
-   gettingstarted
+.. toctree::
+   :numbered:
+
+   introduction
    contributing
    changes
    license
