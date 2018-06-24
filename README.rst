@@ -1,5 +1,5 @@
 ======================
-REANA Message Broker
+ REANA-Message-Broker
 ======================
 
 .. image:: https://img.shields.io/travis/reanahub/reana-message-broker.svg
@@ -23,9 +23,9 @@ REANA Message Broker
 About
 -----
 
-REANA-Message-Broker is a component of the `REANA <http://reanahub.io/>`_
-reusable analysis platform. It provides a broker service for event messages and
-notifications.
+REANA-Message-Broker is a component of the `REANA <http://www.reana.io/>`_
+reusable and reproducible research data analysis platform. It provides a broker
+service for event messages and notifications.
 
 Features
 --------
@@ -42,4 +42,5 @@ Useful links
 - `source code <https://github.com/reanahub/reana-message-broker>`_
 
 For more information about the REANA reusable analysis platform, please see the
-general `REANA documentation <http://reana.readthedocs.io/>`_.
+`REANA project <http://www.reana.io>`_ home page and the general `REANA
+documentation <http://reana.readthedocs.io/>`_ pages.

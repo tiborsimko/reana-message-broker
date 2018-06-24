@@ -119,15 +119,21 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
     'logo': 'logo-reana.png',
-    'description': 'REANA-Message-Broker',
+    'description': """<p>REANA-Message-Broker is a component of the <a
+                      href="http://www.reana.io">REANA</a> reusable and
+                      reproducible research data analysis
+                      platform.</p><p>REANA-Message-Broker provides a broker
+                      service for event messages and notifications.</p>""",
     'github_user': 'reanahub',
     'github_repo': 'reana-message-broker',
     'github_button': False,
     'github_banner': True,
     'show_powered_by': False,
     'extra_nav_links': {
-        'REANA@GitHub': 'https://github.com/reanahub',
         'REANA@DockerHub': 'https://hub.docker.com/u/reanahub/',
+        'REANA@GitHub': 'https://github.com/reanahub',
+        'REANA@Twitter': 'https://twitter.com/reanahub',
+        'REANA@Web': 'http://www.reana.io',
     }
 }
 
