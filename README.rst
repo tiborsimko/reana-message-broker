@@ -5,7 +5,7 @@
 .. image:: https://img.shields.io/travis/reanahub/reana-message-broker.svg
    :target: https://travis-ci.org/reanahub/reana-message-broker
 
-.. image:: https://readthedocs.org/projects/docs/badge/?version=latest
+.. image:: https://readthedocs.org/projects/reana-message-broker/badge/?version=latest
    :target: https://reana-message-broker.readthedocs.io/en/latest/?badge=latest
 
 .. image:: https://img.shields.io/coveralls/reanahub/reana-message-broker.svg
