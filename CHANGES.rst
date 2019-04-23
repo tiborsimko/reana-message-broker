@@ -1,6 +1,11 @@
 Changes
 =======
 
+Version 0.5.0 (2019-04-23)
+--------------------------
+
+- Cleans REANA-Message-Broker Dockerfile by removing unused instructions.
+
 Version 0.4.0 (2018-11-06)
 --------------------------
 
