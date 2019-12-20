@@ -1,6 +1,11 @@
 Changes
 =======
 
+Version 0.6.0 (2019-12-20)
+--------------------------
+
+- Fixes documentation badge links.
+
 Version 0.5.0 (2019-04-23)
 --------------------------
 
