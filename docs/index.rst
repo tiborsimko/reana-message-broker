@@ -2,17 +2,26 @@
    :end-before: About
 
 .. include:: ../README.rst
-   :start-after: -----
+   :start-after: =====
    :end-before: Features
 
-.. toctree::
-   :numbered:
+Features:
 
-.. toctree::
-   :numbered:
+.. include:: ../README.rst
+   :start-line: 29
+   :end-before: Useful links
 
-   introduction
-   contributing
-   changes
-   license
-   authors
+.. include:: ../CHANGES.rst
+
+.. include:: ../CONTRIBUTING.rst
+
+License
+=======
+
+.. include:: ../LICENSE
+
+In applying this license, CERN does not waive the privileges and immunities
+granted to it by virtue of its status as an Intergovernmental Organization or
+submit itself to any jurisdiction.
+
+.. include:: ../AUTHORS.rst

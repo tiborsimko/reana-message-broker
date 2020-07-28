@@ -1,6 +1,6 @@
-======================
- REANA-Message-Broker
-======================
+####################
+REANA-Message-Broker
+####################
 
 .. image:: https://img.shields.io/travis/reanahub/reana-message-broker.svg
    :target: https://travis-ci.org/reanahub/reana-message-broker
@@ -18,26 +18,33 @@
    :target: https://github.com/reanahub/reana-message-broker/blob/master/LICENSE
 
 About
------
+=====
 
 REANA-Message-Broker is a component of the `REANA <http://www.reana.io/>`_
 reusable and reproducible research data analysis platform. It provides a broker
 service for event messages and notifications.
 
 Features
---------
+========
 
 - message queue for events
 - uses RabbitMQ
 
+Usage
+=====
+
+The detailed information on how to install and use REANA can be found in
+`docs.reana.io <https://docs.reana.io>`_.
+
 Useful links
-------------
+============
 
-- `documentation <https://reana-message-broker.readthedocs.io/>`_
-- `releases <https://github.com/reanahub/reana-message-broker/releases>`_
-- `known issues <https://github.com/reanahub/reana-message-broker/issues>`_
-- `source code <https://github.com/reanahub/reana-message-broker>`_
+- `REANA project home page <http://www.reana.io/>`_
+- `REANA user documentation <https://docs.reana.io>`_
+- `REANA user support forum <https://forum.reana.io>`_
 
-For more information about the REANA reusable analysis platform, please see the
-`REANA project <http://www.reana.io>`_ home page and the general `REANA
-documentation <http://reana.readthedocs.io/>`_ pages.
+- `REANA-Message-Broker releases <https://reana-message-broker.readthedocs.io/en/latest#changes>`_
+- `REANA-Message-Broker docker images <https://hub.docker.com/r/reanahub/reana-message-broker>`_
+- `REANA-Message-Broker developer documentation <https://reana-message-broker.readthedocs.io/>`_
+- `REANA-Message-Broker known issues <https://github.com/reanahub/reana-message-broker/issues>`_
+- `REANA-Message-Broker source code <https://github.com/reanahub/reana-message-broker>`_
