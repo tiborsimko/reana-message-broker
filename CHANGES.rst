@@ -1,6 +1,11 @@
 Changes
 =======
 
+Version 0.7.0 (2020-10-20)
+--------------------------
+
+- Changes documentation to single-page layout.
+
 Version 0.6.0 (2019-12-20)
 --------------------------
 
