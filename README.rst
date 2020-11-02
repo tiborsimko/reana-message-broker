@@ -2,14 +2,14 @@
 REANA-Message-Broker
 ####################
 
-.. image:: https://img.shields.io/travis/reanahub/reana-message-broker.svg
-   :target: https://travis-ci.org/reanahub/reana-message-broker
+.. image:: https://github.com/reanahub/reana-message-broker/workflows/CI/badge.svg
+   :target: https://github.com/reanahub/reana-message-broker/actions
 
 .. image:: https://readthedocs.org/projects/reana-message-broker/badge/?version=latest
    :target: https://reana-message-broker.readthedocs.io/en/latest/?badge=latest
 
-.. image:: https://img.shields.io/coveralls/reanahub/reana-message-broker.svg
-   :target: https://coveralls.io/r/reanahub/reana-message-broker
+.. image:: https://codecov.io/gh/reanahub/reana-message-broker/branch/master/graph/badge.svg
+      :target: https://codecov.io/gh/reanahub/reana-message-broker
 
 .. image:: https://badges.gitter.im/Join%20Chat.svg
    :target: https://gitter.im/reanahub/reana?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
