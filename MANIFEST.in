@@ -9,6 +9,7 @@ include Dockerfile
 include .dockerignore
 include *.rst
 include *.sh
+include .flake8
 include pytest.ini
 recursive-include docs *.py
 recursive-include docs *.png
