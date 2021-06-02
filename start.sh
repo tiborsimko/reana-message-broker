@@ -11,4 +11,5 @@ cat > /etc/rabbitmq/rabbitmq.config <<EOF
 	{rabbit, [{default_user, <<"$1">>},{default_pass, <<"$2">>},{tcp_listeners, [{"0.0.0.0", 5672}]}]}
 ].
 EOF
+chown rabbitmq:rabbitmq /var/lib/rabbitmq/mnesia
 rabbitmq-server

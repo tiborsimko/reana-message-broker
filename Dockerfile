@@ -10,6 +10,7 @@ RUN apt-get update
 # hadolint ignore=DL3008
 RUN apt-get -y install --no-install-recommends rabbitmq-server
 RUN apt-get -y autoremove && apt-get -y clean
+ENV RABBITMQ_NODENAME=rabbit@localhost
 # hadolint ignore=DL3001
 RUN service rabbitmq-server start
 COPY start.sh /start.sh
