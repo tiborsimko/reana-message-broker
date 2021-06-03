@@ -11,6 +11,8 @@ RUN apt-get update
 RUN apt-get -y install --no-install-recommends rabbitmq-server
 RUN apt-get -y autoremove && apt-get -y clean
 ENV RABBITMQ_NODENAME=rabbit@localhost
+ARG DEBUG=0
+RUN if [ "${DEBUG}" -gt 0 ]; then rabbitmq-plugins enable rabbitmq_management; fi;
 # hadolint ignore=DL3001
 RUN service rabbitmq-server start
 COPY start.sh /start.sh
