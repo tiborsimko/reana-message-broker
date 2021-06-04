@@ -1,6 +1,13 @@
 Changes
 =======
 
+Version 0.8.0 (UNRELEASED)
+---------------------------
+
+- Changes base image to the official RabbitMQ Docker image.
+- Adds RabbitMQ message delay plugin.
+- Adds RabbitMQ management UI exposed on port 31672 in the cluster debug mode.
+
 Version 0.7.1 (2021-02-03)
 --------------------------
 
