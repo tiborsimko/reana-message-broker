@@ -1,7 +1,7 @@
 Changes
 =======
 
-Version 0.8.0 (UNRELEASED)
+Version 0.8.0 (2021-11-22)
 ---------------------------
 
 - Changes base image to the official RabbitMQ Docker image.
