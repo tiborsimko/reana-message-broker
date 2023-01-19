@@ -1,6 +1,11 @@
 Changes
 =======
 
+Version 0.9.0 (2023-01-19)
+--------------------------
+
+- Fixes documentation to set the default language to English.
+
 Version 0.8.0 (2021-11-22)
 ---------------------------
 
