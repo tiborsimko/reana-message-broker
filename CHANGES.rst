@@ -1,6 +1,11 @@
 Changes
 =======
 
+Version 0.9.1 (UNRELEASED)
+--------------------------
+
+- Fixes high memory usage of rabbitmq by limiting the maximum number of open file descriptors.
+
 Version 0.9.0 (2023-01-19)
 --------------------------
 
