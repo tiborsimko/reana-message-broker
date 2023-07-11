@@ -4,7 +4,7 @@
 # REANA is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
-FROM rabbitmq:3.8-management
+FROM docker.io/library/rabbitmq:3.8-management
 
 ENV RABBITMQ_NODENAME=rabbit@localhost
 ARG DEBUG=0
