@@ -1,10 +1,11 @@
 Changes
 =======
 
-Version 0.9.1 (UNRELEASED)
+Version 0.9.1 (2023-09-27)
 --------------------------
 
-- Fixes high memory usage of rabbitmq by limiting the maximum number of open file descriptors.
+- Fixes high memory usage of RabbitMQ by limiting the maximum number of open file descriptors.
+- Fixes container image names to be Podman-compatible.
 
 Version 0.9.0 (2023-01-19)
 --------------------------
