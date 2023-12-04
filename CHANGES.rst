@@ -1,9 +1,10 @@
 Changes
 =======
 
-Version 0.9.2 (2023-12-06)
+Version 0.9.2 (2023-12-12)
 --------------------------
 
+- Adds automated multi-platform container image building for amd64 and arm64 architectures.
 - Adds metadata labels to Dockerfile.
 
 Version 0.9.1 (2023-09-27)
