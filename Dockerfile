@@ -14,3 +14,15 @@ RUN if [ "${DEBUG}" -lt 1 ]; then rabbitmq-plugins disable --offline rabbitmq_ma
 COPY start.sh /start.sh
 RUN chmod 755 ./start.sh
 CMD ["/start.sh", "test", "1234"]
+
+# Set image labels
+LABEL org.opencontainers.image.authors="team@reanahub.io"
+LABEL org.opencontainers.image.created="2023-12-12"
+LABEL org.opencontainers.image.description="REANA reproducible analysis platform - message broker component"
+LABEL org.opencontainers.image.documentation="https://reana-message-broker.readthedocs.io/"
+LABEL org.opencontainers.image.licenses="MIT"
+LABEL org.opencontainers.image.source="https://github.com/reanahub/reana-message-broker"
+LABEL org.opencontainers.image.title="reana-message-broker"
+LABEL org.opencontainers.image.url="https://github.com/reanahub/reana-message-broker"
+LABEL org.opencontainers.image.vendor="reanahub"
+LABEL org.opencontainers.image.version="0.9.2"
