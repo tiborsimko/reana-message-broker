@@ -14,4 +14,4 @@ EOF
 chown rabbitmq:rabbitmq /var/lib/rabbitmq/mnesia
 # Limit maximum number of open file descriptors to avoid high memory usage
 ulimit -n 1048576
-rabbitmq-server
+exec rabbitmq-server
