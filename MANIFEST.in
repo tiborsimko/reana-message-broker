@@ -6,7 +6,6 @@
 
 include *.json
 include *.md
-include *.rst
 include *.sh
 include *.yaml
 include .dockerignore
@@ -17,6 +16,6 @@ include pytest.ini
 exclude .readthedocs.yaml
 recursive-include docs *.py
 recursive-include docs *.png
-recursive-include docs *.rst
+recursive-include docs *.md
 recursive-include docs *.txt
 recursive-include tests *.py
