@@ -18,23 +18,21 @@ from setuptools import find_packages, setup
 readme = open("README.md").read()
 history = open("CHANGELOG.md").read()
 
-tests_require = [
-    "check-manifest>=0.25",
-    "coverage>=4.0",
-    "pydocstyle>=1.0.0",
-    "pytest-cache>=1.0",
-    "pytest-cov>=1.8.0",
-    "pytest-pep8>=1.0.6",
-    "pytest>=3.8.0",
-]
-
 extras_require = {
     "docs": [
         "myst-parser",
         "Sphinx>=1.4.4",
         "sphinx-rtd-theme>=0.1.9",
     ],
-    "tests": tests_require,
+    "tests": [
+        "check-manifest>=0.25",
+        "coverage>=4.0",
+        "pydocstyle>=1.0.0",
+        "pytest-cache>=1.0",
+        "pytest-cov>=1.8.0",
+        "pytest-pep8>=1.0.6",
+        "pytest>=3.8.0",
+    ],
 }
 
 extras_require["all"] = []
@@ -64,7 +62,6 @@ setup(
     packages=["reana_message_broker"],
     zip_safe=False,
     extras_require=extras_require,
-    tests_require=tests_require,
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
