@@ -43,10 +43,6 @@ for key, reqs in extras_require.items():
         continue
     extras_require["all"].extend(reqs)
 
-setup_requires = [
-    "pytest-runner>=2.7",
-]
-
 packages = find_packages()
 
 
@@ -68,7 +64,6 @@ setup(
     packages=["reana_message_broker"],
     zip_safe=False,
     extras_require=extras_require,
-    setup_requires=setup_requires,
     tests_require=tests_require,
     classifiers=[
         "Development Status :: 3 - Alpha",
