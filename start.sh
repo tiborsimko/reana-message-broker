@@ -6,6 +6,11 @@
 # REANA is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
+# Disable management plugin in production (before server starts)
+if [ "${DEBUG:-0}" -lt 1 ]; then
+    rabbitmq-plugins disable --offline rabbitmq_management
+fi
+
 cat > /etc/rabbitmq/rabbitmq.config <<EOF
 [
 	{rabbit, [{default_user, <<"$1">>},{default_pass, <<"$2">>},{tcp_listeners, [{"0.0.0.0", 5672}]}]}

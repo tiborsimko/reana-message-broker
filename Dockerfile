@@ -7,9 +7,7 @@
 FROM docker.io/library/rabbitmq:3.8-management
 
 ENV RABBITMQ_NODENAME=rabbit@localhost
-ARG DEBUG=0
-
-RUN if [ "${DEBUG}" -lt 1 ]; then rabbitmq-plugins disable --offline rabbitmq_management; fi
+ENV DEBUG=0
 
 COPY start.sh /start.sh
 RUN chmod 755 ./start.sh
