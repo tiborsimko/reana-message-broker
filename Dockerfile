@@ -24,5 +24,5 @@ LABEL org.opencontainers.image.title="reana-message-broker"
 LABEL org.opencontainers.image.url="https://github.com/reanahub/reana-message-broker"
 LABEL org.opencontainers.image.vendor="reanahub"
 # x-release-please-start-version
-LABEL org.opencontainers.image.version="0.95.0-alpha.2"
+LABEL org.opencontainers.image.version="0.95.0"
 # x-release-please-end
