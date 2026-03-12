@@ -21,6 +21,14 @@ format_black() {
     black --check .
 }
 
+format_prettier() {
+    prettier -c .
+}
+
+format_shfmt() {
+    shfmt -d .
+}
+
 lint_commitlint() {
     from=${2:-master}
     to=${3:-HEAD}
@@ -68,7 +76,7 @@ lint_flake8() {
 }
 
 lint_hadolint() {
-    docker run -i --rm docker.io/hadolint/hadolint:v2.12.0 < Dockerfile
+    docker run -i --rm docker.io/hadolint/hadolint:v2.12.0 <Dockerfile
 }
 
 lint_manifest() {
@@ -95,6 +103,7 @@ all() {
     docker_build
     docs_sphinx
     format_black
+    format_shfmt
     lint_commitlint
     lint_flake8
     lint_hadolint
@@ -113,6 +122,7 @@ help() {
     echo "  --docker-build       Check Docker build"
     echo "  --docs-sphinx        Check Sphinx docs build"
     echo "  --format-black       Check formatting of Python code"
+    echo "  --format-shfmt       Check formatting of shell scripts"
     echo "  --help               Display this help message"
     echo "  --lint-commitlint    Check linting of commit messages"
     echo "  --lint-flake8        Check linting of Python code"
@@ -137,6 +147,7 @@ case $arg in
 --docker-build) docker_build ;;
 --docs-sphinx) docs_sphinx ;;
 --format-black) format_black ;;
+--format-shfmt) format_shfmt ;;
 --lint-commitlint) lint_commitlint "$@" ;;
 --lint-flake8) lint_flake8 ;;
 --lint-hadolint) lint_hadolint ;;
