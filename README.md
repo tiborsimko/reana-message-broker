@@ -8,9 +8,10 @@
 
 ## About
 
-REANA-Message-Broker is a component of the [REANA](http://www.reana.io/) reusable and
-reproducible research data analysis platform. It provides a broker service for event
-messages and notifications.
+REANA-Message-Broker is a component of the
+[REANA](http://www.reana.io/) reusable and reproducible research data
+analysis platform. It provides a broker service for event messages and
+notifications.
 
 ## Features
 
