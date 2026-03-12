@@ -10,6 +10,7 @@ include *.sh
 include *.yaml
 include .dockerignore
 include .flake8
+include .yamllint.yaml
 include Dockerfile
 include LICENSE
 include pytest.ini
